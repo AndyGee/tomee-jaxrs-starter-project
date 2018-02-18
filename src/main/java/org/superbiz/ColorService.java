@@ -16,8 +16,18 @@
  */
 package org.superbiz;
 
+import com.hazelcast.config.ClasspathXmlConfig;
+import com.hazelcast.core.Hazelcast;
+import com.hazelcast.core.HazelcastInstance;
+import com.hazelcast.core.ITopic;
+import com.hazelcast.core.Message;
+import com.hazelcast.core.MessageListener;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.ejb.Lock;
 import javax.ejb.Singleton;
+import javax.ejb.Startup;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -28,15 +38,32 @@ import static javax.ejb.LockType.READ;
 import static javax.ejb.LockType.WRITE;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
+@Startup
 @Lock(READ)
 @Singleton
 @Path("/color")
-public class ColorService {
+public class ColorService implements MessageListener<Object> {
 
     private String color;
+    private ITopic<Object> tomee;
+    private HazelcastInstance instance;
 
     public ColorService() {
         this.color = "white";
+    }
+
+    @PostConstruct
+    public void postConstruct() {
+        instance = Hazelcast.newHazelcastInstance(new ClasspathXmlConfig("hazelcast.xml"));
+        tomee = instance.getReliableTopic("tomee");
+        tomee.addMessageListener(this);
+    }
+
+    @PreDestroy
+    public void preDestroy(){
+        if(null != instance){
+            instance.shutdown();
+        }
     }
 
     @GET
@@ -47,8 +74,9 @@ public class ColorService {
     @Lock(WRITE)
     @Path("{color}")
     @POST
-    public void setColor(@PathParam("color") String color) {
+    public void setColor(@PathParam("color") final String color) {
         this.color = color;
+        this.tomee.publish(this.color);
     }
 
     @Path("object")
@@ -56,5 +84,10 @@ public class ColorService {
     @Produces({APPLICATION_JSON})
     public Color getColorObject() {
         return new Color("orange", 0xE7, 0x71, 0x00);
+    }
+
+    @Override
+    public void onMessage(final Message<Object> message) {
+        System.out.println("\n$$$$$ The colour of money is " + message.getMessageObject() + " $$$$$\n");
     }
 }

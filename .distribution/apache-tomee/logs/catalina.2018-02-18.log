@@ -1,0 +1,167 @@
+18-Feb-2018 12:51:43.827 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server version:        Apache Tomcat (TomEE)/8.5.20 (7.0.4)
+18-Feb-2018 12:51:43.827 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server built:          Aug 2 2017 21:35:49 UTC
+18-Feb-2018 12:51:43.827 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Server number:         8.5.20.0
+18-Feb-2018 12:51:43.827 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Name:               Linux
+18-Feb-2018 12:51:43.827 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke OS Version:            4.14.19-041419-generic
+18-Feb-2018 12:51:43.827 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Architecture:          amd64
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Java Home:             /usr/lib/jvm/java-8-oracle/jre
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Version:           1.8.0_161-b12
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke JVM Vendor:            Oracle Corporation
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_BASE:         /home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke CATALINA_HOME:         /home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.config.file=/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/conf/logging.properties
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -javaagent:/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/lib/openejb-javaagent.jar
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.NativeMethodAccessorImpl.invoke Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dorg.apache.catalina.STRICT_SERVLET_COMPLIANCE=false
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dopenejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager
+18-Feb-2018 12:51:43.828 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.remote.support=true
+18-Feb-2018 12:51:43.829 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dopenejb.system.apps=false
+18-Feb-2018 12:51:43.829 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.noshutdownhook=true
+18-Feb-2018 12:51:43.829 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dtomee.jsp-development=true
+18-Feb-2018 12:51:43.829 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.base=/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee
+18-Feb-2018 12:51:43.829 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Dcatalina.home=/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee
+18-Feb-2018 12:51:43.829 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Command line argument: -Djava.io.tmpdir=/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/temp
+18-Feb-2018 12:51:43.829 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+18-Feb-2018 12:51:44.020 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["http-nio-8080"]
+18-Feb-2018 12:51:44.041 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+18-Feb-2018 12:51:44.055 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initializing ProtocolHandler ["ajp-nio-8009"]
+18-Feb-2018 12:51:44.057 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Using a shared selector for servlet write/read
+18-Feb-2018 12:51:44.445 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'tomee.remote.support=true'
+18-Feb-2018 12:51:44.474 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.jdbc.datasource-creator=org.apache.tomee.jdbc.TomEEDataSourceCreator'
+18-Feb-2018 12:51:44.579 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+18-Feb-2018 12:51:44.579 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> OpenEJB http://tomee.apache.org/
+18-Feb-2018 12:51:44.579 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Startup: Sun Feb 18 12:51:44 CET 2018
+18-Feb-2018 12:51:44.579 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Copyright 1999-2017 (C) Apache OpenEJB Project, All Rights Reserved.
+18-Feb-2018 12:51:44.579 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Version: 7.0.4
+18-Feb-2018 12:51:44.579 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build date: 20170926
+18-Feb-2018 12:51:44.580 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> Build time: 12:10
+18-Feb-2018 12:51:44.580 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> ********************************************************************************
+18-Feb-2018 12:51:44.580 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.home = /home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee
+18-Feb-2018 12:51:44.580 INFO [main] org.apache.openejb.OpenEJB$Instance.<init> openejb.base = /home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee
+18-Feb-2018 12:51:44.581 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Created new singletonService org.apache.openejb.cdi.ThreadSingletonServiceImpl@57d5872c
+18-Feb-2018 12:51:44.581 INFO [main] org.apache.openejb.cdi.CdiBuilder.initializeOWB Succeeded in installing singleton service
+18-Feb-2018 12:51:44.627 INFO [main] org.apache.openejb.config.ConfigurationFactory.init TomEE configuration file is '/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/conf/tomee.xml'
+18-Feb-2018 12:51:44.680 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Tomcat Security Service, type=SecurityService, provider-id=Tomcat Security Service)
+18-Feb-2018 12:51:44.685 INFO [main] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Transaction Manager, type=TransactionManager, provider-id=Default Transaction Manager)
+18-Feb-2018 12:51:44.688 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.system.apps=false'
+18-Feb-2018 12:51:44.689 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'openejb.deployments.classpath=false'
+18-Feb-2018 12:51:44.692 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating TransactionManager(id=Default Transaction Manager)
+18-Feb-2018 12:51:44.751 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating SecurityService(id=Tomcat Security Service)
+18-Feb-2018 12:51:44.833 INFO [main] org.apache.openejb.server.ServiceManager.initServer Creating ServerService(id=cxf-rs)
+18-Feb-2018 12:51:45.082 INFO [main] org.apache.openejb.server.SimpleServiceManager.start   ** Bound Services **
+18-Feb-2018 12:51:45.082 INFO [main] org.apache.openejb.server.SimpleServiceManager.printRow   NAME                 IP              PORT  
+18-Feb-2018 12:51:45.082 INFO [main] org.apache.openejb.server.SimpleServiceManager.start -------
+18-Feb-2018 12:51:45.082 INFO [main] org.apache.openejb.server.SimpleServiceManager.start Ready!
+18-Feb-2018 12:51:45.082 INFO [main] org.apache.openejb.util.OptionsLog.info Using 'tomee.noshutdownhook=true'
+18-Feb-2018 12:51:45.082 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Initialization processed in 1649 ms
+18-Feb-2018 12:51:45.122 INFO [main] org.apache.tomee.catalina.OpenEJBNamingContextListener.bindResource Importing a Tomcat Resource with id 'UserDatabase' of type 'org.apache.catalina.UserDatabase'.
+18-Feb-2018 12:51:45.124 INFO [main] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Resource(id=UserDatabase)
+18-Feb-2018 12:51:45.129 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting service [Catalina]
+18-Feb-2018 12:51:45.130 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting Servlet Engine: Apache Tomcat (TomEE)/8.5.20 (7.0.4)
+18-Feb-2018 12:51:45.163 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deploying web application archive [/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/webapps/tomee-rest-arquillian-1.0-SNAPSHOT.war]
+18-Feb-2018 12:51:45.177 INFO [localhost-startStop-1] org.apache.tomee.catalina.TomcatWebAppBuilder.init ------------------------- localhost -> /tomee-rest-arquillian-1.0-SNAPSHOT
+18-Feb-2018 12:51:45.178 INFO [localhost-startStop-1] org.apache.openejb.util.JarExtractor.extract Extracting jar: /home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/webapps/tomee-rest-arquillian-1.0-SNAPSHOT.war
+18-Feb-2018 12:51:45.269 INFO [localhost-startStop-1] org.apache.openejb.util.JarExtractor.extract Extracted path: /home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/webapps/tomee-rest-arquillian-1.0-SNAPSHOT
+18-Feb-2018 12:51:45.269 INFO [localhost-startStop-1] org.apache.openejb.util.OptionsLog.info Using 'openejb.session.manager=org.apache.tomee.catalina.session.QuickSessionManager'
+18-Feb-2018 12:51:45.908 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureApplication Configuring enterprise application: /home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/webapps/tomee-rest-arquillian-1.0-SNAPSHOT
+18-Feb-2018 12:51:46.103 INFO [localhost-startStop-1] org.apache.openejb.config.InitEjbDeployments.deploy Auto-deploying ejb ColorService: EjbDeployment(deployment-id=ColorService)
+18-Feb-2018 12:51:46.107 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Singleton Container, type=Container, provider-id=Default Singleton Container)
+18-Feb-2018 12:51:46.108 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean ColorService: Container(type=SINGLETON, id=Default Singleton Container)
+18-Feb-2018 12:51:46.108 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Singleton Container)
+18-Feb-2018 12:51:46.145 INFO [localhost-startStop-1] org.apache.openejb.config.ConfigurationFactory.configureService Configuring Service(id=Default Managed Container, type=Container, provider-id=Default Managed Container)
+18-Feb-2018 12:51:46.146 INFO [localhost-startStop-1] org.apache.openejb.config.AutoConfig.createContainer Auto-creating a container for bean tomee-rest-arquillian-1.0-SNAPSHOT.Comp1358602983: Container(type=MANAGED, id=Default Managed Container)
+18-Feb-2018 12:51:46.146 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createRecipe Creating Container(id=Default Managed Container)
+18-Feb-2018 12:51:46.156 INFO [localhost-startStop-1] org.apache.openejb.core.managed.SimplePassivater.init Using directory /home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/temp for stateful session passivation
+18-Feb-2018 12:51:46.260 INFO [localhost-startStop-1] org.apache.openejb.config.AppInfoBuilder.build Enterprise application "/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/webapps/tomee-rest-arquillian-1.0-SNAPSHOT" loaded.
+18-Feb-2018 12:51:46.264 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Assembling app: /home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/webapps/tomee-rest-arquillian-1.0-SNAPSHOT
+18-Feb-2018 12:51:46.365 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=ColorServiceLocal) --> Ejb(deployment-id=ColorService)
+18-Feb-2018 12:51:46.365 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/tomee-rest-arquillian-1.0-SNAPSHOT/ColorService!com.hazelcast.core.MessageListener) --> Ejb(deployment-id=ColorService)
+18-Feb-2018 12:51:46.366 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.JndiBuilder.bind Jndi(name=global/tomee-rest-arquillian-1.0-SNAPSHOT/ColorService) --> Ejb(deployment-id=ColorService)
+18-Feb-2018 12:51:46.394 INFO [localhost-startStop-1] org.apache.openejb.cdi.CdiBuilder.initSingleton Existing thread singleton service in SystemInstance(): org.apache.openejb.cdi.ThreadSingletonServiceImpl@57d5872c
+18-Feb-2018 12:51:46.483 INFO [localhost-startStop-1] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container is starting...
+18-Feb-2018 12:51:46.490 INFO [localhost-startStop-1] org.apache.webbeans.plugins.PluginLoader.startUp Adding OpenWebBeansPlugin : [CdiPlugin]
+18-Feb-2018 12:51:46.494 INFO [localhost-startStop-1] org.apache.openejb.cdi.CdiScanner.handleBda Using annotated mode for file:/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/webapps/tomee-rest-arquillian-1.0-SNAPSHOT/WEB-INF/classes/ looking all classes to find CDI beans, maybe think to add a beans.xml if not there or add the jar to exclusions.list
+18-Feb-2018 12:51:46.794 INFO [localhost-startStop-1] org.apache.webbeans.config.BeansDeployer.validateInjectionPoints All injection points were validated successfully.
+18-Feb-2018 12:51:46.798 INFO [localhost-startStop-1] org.apache.openejb.cdi.OpenEJBLifecycle.startApplication OpenWebBeans Container has started, it took 315 ms.
+18-Feb-2018 12:51:46.811 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Created Ejb(deployment-id=ColorService, ejb-name=ColorService, container=Default Singleton Container)
+18-Feb-2018 12:51:46.884 INFO [localhost-startStop-1] com.hazelcast.config.ClasspathXmlConfig.null Configuring Hazelcast from 'hc.xml'.
+18-Feb-2018 12:51:47.265 INFO [localhost-startStop-1] com.hazelcast.instance.AddressPicker.null [LOCAL] [dev] [3.9.3] Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [10.42.0.1, 10.42.0.47]
+18-Feb-2018 12:51:47.265 INFO [localhost-startStop-1] com.hazelcast.instance.AddressPicker.null [LOCAL] [dev] [3.9.3] Prefer IPv4 stack is true.
+18-Feb-2018 12:51:47.270 INFO [localhost-startStop-1] com.hazelcast.instance.AddressPicker.null [LOCAL] [dev] [3.9.3] Picked [10.42.0.1]:5701, using socket ServerSocket[addr=/10.42.0.1,localport=5701], bind any local is false
+18-Feb-2018 12:51:47.292 INFO [localhost-startStop-1] com.hazelcast.system.null [10.42.0.1]:5701 [dev] [3.9.3] Hazelcast 3.9.3 (20180216 - 539b124) starting at [10.42.0.1]:5701
+18-Feb-2018 12:51:47.292 INFO [localhost-startStop-1] com.hazelcast.system.null [10.42.0.1]:5701 [dev] [3.9.3] Copyright (c) 2008-2018, Hazelcast, Inc. All Rights Reserved.
+18-Feb-2018 12:51:47.292 INFO [localhost-startStop-1] com.hazelcast.system.null [10.42.0.1]:5701 [dev] [3.9.3] Configured Hazelcast Serialization version: 1
+18-Feb-2018 12:51:47.628 INFO [localhost-startStop-1] com.hazelcast.spi.impl.operationservice.impl.BackpressureRegulator.null [10.42.0.1]:5701 [dev] [3.9.3] Backpressure is disabled
+18-Feb-2018 12:51:48.253 INFO [localhost-startStop-1] com.hazelcast.instance.Node.null [10.42.0.1]:5701 [dev] [3.9.3] Creating TcpIpJoiner
+18-Feb-2018 12:51:48.414 INFO [localhost-startStop-1] com.hazelcast.spi.impl.operationexecutor.impl.OperationExecutorImpl.null [10.42.0.1]:5701 [dev] [3.9.3] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+18-Feb-2018 12:51:48.420 INFO [localhost-startStop-1] com.hazelcast.internal.diagnostics.Diagnostics.null [10.42.0.1]:5701 [dev] [3.9.3] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+18-Feb-2018 12:51:48.425 INFO [localhost-startStop-1] com.hazelcast.core.LifecycleService.null [10.42.0.1]:5701 [dev] [3.9.3] [10.42.0.1]:5701 is STARTING
+18-Feb-2018 12:51:48.493 INFO [hz._hzInstance_1_dev.cached.thread-5] com.hazelcast.nio.tcp.TcpIpConnector.null [10.42.0.1]:5701 [dev] [3.9.3] Connecting to /10.42.0.1:5703, timeout: 0, bind-any: false
+18-Feb-2018 12:51:48.493 INFO [hz._hzInstance_1_dev.cached.thread-1] com.hazelcast.nio.tcp.TcpIpConnector.null [10.42.0.1]:5701 [dev] [3.9.3] Connecting to /10.42.0.47:5703, timeout: 0, bind-any: false
+18-Feb-2018 12:51:48.493 INFO [hz._hzInstance_1_dev.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnector.null [10.42.0.1]:5701 [dev] [3.9.3] Connecting to /10.42.0.47:5701, timeout: 0, bind-any: false
+18-Feb-2018 12:51:48.493 INFO [hz._hzInstance_1_dev.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector.null [10.42.0.1]:5701 [dev] [3.9.3] Connecting to /10.42.0.1:5702, timeout: 0, bind-any: false
+18-Feb-2018 12:51:48.493 INFO [hz._hzInstance_1_dev.cached.thread-4] com.hazelcast.nio.tcp.TcpIpConnector.null [10.42.0.1]:5701 [dev] [3.9.3] Connecting to /10.42.0.47:5702, timeout: 0, bind-any: false
+18-Feb-2018 12:51:48.494 INFO [hz._hzInstance_1_dev.cached.thread-3] com.hazelcast.nio.tcp.TcpIpConnector.null [10.42.0.1]:5701 [dev] [3.9.3] Could not connect to: /10.42.0.1:5702. Reason: SocketException[Connection refused to address /10.42.0.1:5702]
+18-Feb-2018 12:51:48.494 INFO [hz._hzInstance_1_dev.cached.thread-5] com.hazelcast.nio.tcp.TcpIpConnector.null [10.42.0.1]:5701 [dev] [3.9.3] Could not connect to: /10.42.0.1:5703. Reason: SocketException[Connection refused to address /10.42.0.1:5703]
+18-Feb-2018 12:51:48.494 INFO [hz._hzInstance_1_dev.cached.thread-3] com.hazelcast.cluster.impl.TcpIpJoiner.null [10.42.0.1]:5701 [dev] [3.9.3] [10.42.0.1]:5702 is added to the blacklist.
+18-Feb-2018 12:51:48.494 INFO [hz._hzInstance_1_dev.cached.thread-5] com.hazelcast.cluster.impl.TcpIpJoiner.null [10.42.0.1]:5701 [dev] [3.9.3] [10.42.0.1]:5703 is added to the blacklist.
+18-Feb-2018 12:51:48.496 INFO [hz._hzInstance_1_dev.cached.thread-4] com.hazelcast.nio.tcp.TcpIpConnector.null [10.42.0.1]:5701 [dev] [3.9.3] Could not connect to: /10.42.0.47:5702. Reason: SocketException[Connection refused to address /10.42.0.47:5702]
+18-Feb-2018 12:51:48.496 INFO [hz._hzInstance_1_dev.cached.thread-1] com.hazelcast.nio.tcp.TcpIpConnector.null [10.42.0.1]:5701 [dev] [3.9.3] Could not connect to: /10.42.0.47:5703. Reason: SocketException[Connection refused to address /10.42.0.47:5703]
+18-Feb-2018 12:51:48.496 INFO [hz._hzInstance_1_dev.cached.thread-1] com.hazelcast.cluster.impl.TcpIpJoiner.null [10.42.0.1]:5701 [dev] [3.9.3] [10.42.0.47]:5703 is added to the blacklist.
+18-Feb-2018 12:51:48.496 INFO [hz._hzInstance_1_dev.cached.thread-4] com.hazelcast.cluster.impl.TcpIpJoiner.null [10.42.0.1]:5701 [dev] [3.9.3] [10.42.0.47]:5702 is added to the blacklist.
+18-Feb-2018 12:51:48.498 INFO [hz._hzInstance_1_dev.cached.thread-2] com.hazelcast.nio.tcp.TcpIpConnectionManager.null [10.42.0.1]:5701 [dev] [3.9.3] Established socket connection between /10.42.0.1:36961 and /10.42.0.47:5701
+18-Feb-2018 12:51:54.517 INFO [hz._hzInstance_1_dev.priority-generic-operation.thread-0] com.hazelcast.system.null [10.42.0.1]:5701 [dev] [3.9.3] Cluster version set to 3.9
+18-Feb-2018 12:51:54.536 INFO [hz._hzInstance_1_dev.priority-generic-operation.thread-0] com.hazelcast.internal.cluster.ClusterService.null [10.42.0.1]:5701 [dev] [3.9.3] 
+
+Members {size:2, ver:6} [
+	Member [10.42.0.47]:5701 - cc0be620-b134-4801-b851-c94d3c50ec46
+	Member [10.42.0.1]:5701 - 5e03fef2-0949-4384-a026-db827fafcdc1 this
+]
+
+18-Feb-2018 12:51:56.582 INFO [localhost-startStop-1] com.hazelcast.core.LifecycleService.null [10.42.0.1]:5701 [dev] [3.9.3] [10.42.0.1]:5701 is STARTED
+18-Feb-2018 12:51:56.596 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.startEjbs Started Ejb(deployment-id=ColorService, ejb-name=ColorService, container=Default Singleton Container)
+18-Feb-2018 12:51:56.599 INFO [localhost-startStop-1] org.apache.openejb.assembler.classic.Assembler.createApplication Deployed Application(path=/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/webapps/tomee-rest-arquillian-1.0-SNAPSHOT)
+18-Feb-2018 12:51:56.790 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Feb-2018 12:51:57.014 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using readers:
+18-Feb-2018 12:51:57.014 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@1e5e1ad8
+18-Feb-2018 12:51:57.014 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@6f21aa4d
+18-Feb-2018 12:51:57.014 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@480778c7
+18-Feb-2018 12:51:57.014 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@195eb23c
+18-Feb-2018 12:51:57.014 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@63cb24d
+18-Feb-2018 12:51:57.014 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@642d1305
+18-Feb-2018 12:51:57.015 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJohnzonProvider@527ffc9b
+18-Feb-2018 12:51:57.015 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@4566efe2
+18-Feb-2018 12:51:57.015 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@62ad0e34
+18-Feb-2018 12:51:57.015 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@c4b5063
+18-Feb-2018 12:51:57.015 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@217dee55
+18-Feb-2018 12:51:57.015 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using writers:
+18-Feb-2018 12:51:57.015 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.johnzon.jaxrs.WadlDocumentMessageBodyWriter@53161c67
+18-Feb-2018 12:51:57.015 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.StringTextProvider@62ad0e34
+18-Feb-2018 12:51:57.015 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementTypedProvider@63cb24d
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.PrimitiveTextProvider@1e5e1ad8
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.FormEncodingProvider@6f21aa4d
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.MultipartProvider@480778c7
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.SourceProvider@195eb23c
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.JAXBElementProvider@642d1305
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJohnzonProvider@527ffc9b
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.johnzon.TomEEJsonpProvider@4566efe2
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.BinaryDataProvider@c4b5063
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.provider.DataSourceProvider@217dee55
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication Using exception mappers:
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.impl.WebApplicationExceptionMapper@23a1797d
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.openejb.server.cxf.rs.EJBExceptionMapper@1803db9c
+18-Feb-2018 12:51:57.016 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.deployApplication      org.apache.cxf.jaxrs.validation.ValidationExceptionMapper@6e204746
+18-Feb-2018 12:51:57.019 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints REST Application: http://localhost:8080/tomee-rest-arquillian-1.0-SNAPSHOT/              -> org.apache.openejb.server.rest.InternalApplication@7bb394f8
+18-Feb-2018 12:51:57.022 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints      Service URI: http://localhost:8080/tomee-rest-arquillian-1.0-SNAPSHOT/color         ->  EJB org.superbiz.ColorService
+18-Feb-2018 12:51:57.023 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               GET http://localhost:8080/tomee-rest-arquillian-1.0-SNAPSHOT/color/        ->      String getColor()     
+18-Feb-2018 12:51:57.023 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints               GET http://localhost:8080/tomee-rest-arquillian-1.0-SNAPSHOT/color/object  ->      Color getColorObject()
+18-Feb-2018 12:51:57.023 INFO [localhost-startStop-1] org.apache.openejb.server.cxf.rs.CxfRsHttpListener.logEndpoints              POST http://localhost:8080/tomee-rest-arquillian-1.0-SNAPSHOT/color/{color} ->      void setColor(String) 
+18-Feb-2018 12:51:57.044 INFO [localhost-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Deployment of web application archive [/home/andy/github/tomee-jaxrs-starter-project/.distribution/apache-tomee/webapps/tomee-rest-arquillian-1.0-SNAPSHOT.war] has finished in [11,880] ms
+18-Feb-2018 12:51:57.055 INFO [Catalina-startStop-1] sun.reflect.DelegatingMethodAccessorImpl.invoke Unable to set the web application class loader property [clearReferencesRmiTargets] to [true] as the property does not exist.
+18-Feb-2018 12:51:57.065 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["http-nio-8080"]
+18-Feb-2018 12:51:57.073 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Starting ProtocolHandler ["ajp-nio-8009"]
+18-Feb-2018 12:51:57.093 INFO [main] sun.reflect.DelegatingMethodAccessorImpl.invoke Server startup in 12010 ms
+18-Feb-2018 12:57:06.564 INFO [hz.ShutdownThread] com.hazelcast.instance.Node.null [10.42.0.1]:5701 [dev] [3.9.3] Running shutdown hook... Current state: ACTIVE
+18-Feb-2018 12:57:06.566 INFO [hz.ShutdownThread] com.hazelcast.core.LifecycleService.null [10.42.0.1]:5701 [dev] [3.9.3] [10.42.0.1]:5701 is SHUTTING_DOWN

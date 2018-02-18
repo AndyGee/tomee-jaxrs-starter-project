@@ -58,7 +58,8 @@ public class ColorServiceTest extends Assert {
      */
     @Deployment(testable = false)
     public static WebArchive createDeployment() {
-        return ShrinkWrap.create(WebArchive.class).addClasses(ColorService.class, Color.class);
+        return ShrinkWrap.create(WebArchive.class)
+                .addClasses(ColorService.class, Color.class);
     }
 
     /**
