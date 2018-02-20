@@ -88,7 +88,7 @@
           <tomeeClassifier>webprofile</tomeeClassifier>
           <libs>
             <lib>com.hazelcast:hazelcast:3.9.3</lib>
-            <lib>org.eclipse.microprofile.config:microprofile-config-api1.1</lib>
+            <lib>org.eclipse.microprofile.config:microprofile-config-api:1.1</lib>
             <lib>org.apache.geronimo.config:geronimo-config-impl:1.1</lib>
           </libs>
         </configuration>
