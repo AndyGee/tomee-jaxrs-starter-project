@@ -5,7 +5,7 @@
 
   <network>
     <join>
-      <multicast enabled="true">
+      <multicast enabled="false">
         <trusted-interfaces>
           <interface>10.42.0.*</interface>
         </trusted-interfaces>
