@@ -35,25 +35,24 @@ import java.net.URL;
 
 /**
  * Arquillian will start the container, deploy all @Deployment bundles, then run all the @Test methods.
- *
+ * <p>
  * A strong value-add for Arquillian is that the test is abstracted from the server.
  * It is possible to rerun the same test against multiple adapters or server configurations.
- *
+ * <p>
  * A second value-add is it is possible to build WebArchives that are slim and trim and therefore
  * isolate the functionality being tested.  This also makes it easier to swap out one implementation
  * of a class for another allowing for easy mocking.
- *
  */
 @RunWith(Arquillian.class)
 public class ColorServiceTest extends Assert {
 
     /**
      * ShrinkWrap is used to create a war file on the fly.
-     *
+     * <p>
      * The API is quite expressive and can build any possible
      * flavor of war file.  It can quite easily return a rebuilt
      * war file as well.
-     *
+     * <p>
      * More than one @Deployment method is allowed.
      */
     @Deployment(testable = false)
@@ -64,12 +63,11 @@ public class ColorServiceTest extends Assert {
 
     /**
      * This URL will contain the following URL data
-     *
-     *  - http://<host>:<port>/<webapp>/
-     *
+     * <p>
+     * - http://<host>:<port>/<webapp>/
+     * <p>
      * This allows the test itself to be agnostic of server information or even
      * the name of the webapp
-     *
      */
     @ArquillianResource
     private URL webappUrl;

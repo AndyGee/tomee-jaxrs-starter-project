@@ -29,7 +29,7 @@ public class Color {
     public Color() {
     }
 
-    public Color(String name, int r, int g, int b) {
+    public Color(final String name, final int r, final int g, final int b) {
         this.name = name;
         this.r = r;
         this.g = g;
@@ -40,7 +40,7 @@ public class Color {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -48,7 +48,7 @@ public class Color {
         return r;
     }
 
-    public void setR(int r) {
+    public void setR(final int r) {
         this.r = r;
     }
 
@@ -56,7 +56,7 @@ public class Color {
         return g;
     }
 
-    public void setG(int g) {
+    public void setG(final int g) {
         this.g = g;
     }
 
@@ -64,7 +64,7 @@ public class Color {
         return b;
     }
 
-    public void setB(int b) {
+    public void setB(final int b) {
         this.b = b;
     }
 }

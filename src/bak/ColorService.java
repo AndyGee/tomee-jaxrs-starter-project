@@ -22,12 +22,14 @@ import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.ITopic;
 import com.hazelcast.core.Message;
 import com.hazelcast.core.MessageListener;
+import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.ejb.Lock;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
+import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -44,7 +46,10 @@ import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 @Path("/color")
 public class ColorService implements MessageListener<Object> {
 
+    @Inject
+    @ConfigProperty(name = "color.of.money", defaultValue = "white")
     private String color;
+
     private ITopic<Object> tomee;
     private HazelcastInstance instance;
 
@@ -60,8 +65,8 @@ public class ColorService implements MessageListener<Object> {
     }
 
     @PreDestroy
-    public void preDestroy(){
-        if(null != instance){
+    public void preDestroy() {
+        if (null != instance) {
             instance.shutdown();
         }
     }
@@ -86,8 +91,11 @@ public class ColorService implements MessageListener<Object> {
         return new Color("orange", 0xE7, 0x71, 0x00);
     }
 
+    @Lock(WRITE)
     @Override
     public void onMessage(final Message<Object> message) {
-        System.out.println("\n$$$$$ The colour of money is " + message.getMessageObject() + " $$$$$\n");
+        final Object colorObj = message.getMessageObject();
+        System.out.println("\n\n\n$$$$$ The colour of money is " + colorObj + " $$$$$\n\n\n");
+        this.color = colorObj.toString();
     }
 }
