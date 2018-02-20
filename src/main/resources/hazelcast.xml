@@ -10,6 +10,9 @@
           <interface>10.42.0.*</interface>
         </trusted-interfaces>
       </multicast>
+      <tcp-ip enabled="true" connection-timeout-seconds="60">
+        <members>10.42.0.1,10.42.0.47</members>
+      </tcp-ip>
       <aws enabled="false">
       </aws>
     </join>
