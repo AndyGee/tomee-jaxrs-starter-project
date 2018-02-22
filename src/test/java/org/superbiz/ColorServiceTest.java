@@ -22,7 +22,6 @@ import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.test.api.ArquillianResource;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -32,6 +31,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Arquillian will start the container, deploy all @Deployment bundles, then run all the @Test methods.
@@ -44,7 +46,7 @@ import java.net.URL;
  * of a class for another allowing for easy mocking.
  */
 @RunWith(Arquillian.class)
-public class ColorServiceTest extends Assert {
+public class ColorServiceTest {
 
     /**
      * ShrinkWrap is used to create a war file on the fly.
@@ -58,7 +60,7 @@ public class ColorServiceTest extends Assert {
     @Deployment(testable = false)
     public static WebArchive createDeployment() {
         return ShrinkWrap.create(WebArchive.class)
-                .addClasses(ColorService.class, Color.class);
+                .addClasses(ColorService.class, CacheProducer.class, Color.class);
     }
 
     /**
@@ -74,7 +76,7 @@ public class ColorServiceTest extends Assert {
 
 
     @Test
-    public void postAndGet() throws Exception {
+    public void postAndGetTest() throws Exception {
 
         // POST
         {
@@ -104,7 +106,13 @@ public class ColorServiceTest extends Assert {
         final WebClient webClient = WebClient.create(webappUrl.toURI());
         webClient.accept(MediaType.APPLICATION_JSON);
 
-        final Color color = webClient.path("color/object").get(Color.class);
+        Color color = webClient.path("color/object").query("color", "orange").get(Color.class);
+
+        try {
+            color = webClient.path("color/object").query("color", "orange").get(Color.class);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
         assertNotNull(color);
         assertEquals("orange", color.getName());

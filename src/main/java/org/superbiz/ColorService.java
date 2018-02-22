@@ -26,6 +26,11 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.cache.Cache;
+import javax.cache.annotation.CacheDefaults;
+import javax.cache.annotation.CacheKey;
+import javax.cache.annotation.CacheRemove;
+import javax.cache.annotation.CacheResult;
 import javax.ejb.Lock;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
@@ -35,6 +40,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 
 import static javax.ejb.LockType.READ;
 import static javax.ejb.LockType.WRITE;
@@ -44,18 +50,17 @@ import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 @Lock(READ)
 @Singleton
 @Path("/color")
+@CacheDefaults(cacheName = "tomee")
 public class ColorService implements MessageListener<Object> {
+
+    @Inject
+    private Cache<String, Color> cache;
 
     @Inject
     @ConfigProperty(name = "color.of.money", defaultValue = "white")
     private String color;
-
     private ITopic<Object> tomee;
     private HazelcastInstance instance;
-
-    public ColorService() {
-        this.color = "white";
-    }
 
     @PostConstruct
     public void postConstruct() {
@@ -66,8 +71,10 @@ public class ColorService implements MessageListener<Object> {
 
     @PreDestroy
     public void preDestroy() {
-        if (null != instance) {
+        try {
             instance.shutdown();
+        } catch (final Exception ignore) {
+            //no-op
         }
     }
 
@@ -79,23 +86,24 @@ public class ColorService implements MessageListener<Object> {
     @Lock(WRITE)
     @Path("{color}")
     @POST
+    @CacheRemove
     public void setColor(@PathParam("color") final String color) {
         this.color = color;
-        this.tomee.publish(this.color);
+        tomee.publish(color);
     }
 
     @Path("object")
+    @CacheResult
     @GET
     @Produces({APPLICATION_JSON})
-    public Color getColorObject() {
-        return new Color("orange", 0xE7, 0x71, 0x00);
+    public Color getColorObject(@QueryParam(value = "color") @CacheKey final String color) {
+        return new Color(color, 0xE7, 0x71, 0x00);
     }
 
-    @Lock(WRITE)
     @Override
     public void onMessage(final Message<Object> message) {
-        final Object colorObj = message.getMessageObject();
-        System.out.println("\n\n\n$$$$$ The colour of money is " + colorObj + " $$$$$\n\n\n");
-        this.color = colorObj.toString();
+        this.color = String.class.cast(message.getMessageObject());
+
+        System.out.println("\n\n\n\ncolor of money is " + this.color + "\n\n\n\n\n");
     }
 }

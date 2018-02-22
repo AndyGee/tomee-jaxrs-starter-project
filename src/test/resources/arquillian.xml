@@ -20,7 +20,6 @@ If this file is deleted the default Tomcat 8080 port is used
     <configuration>
       <property name="httpPort">-1</property>
       <property name="stopPort">-1</property>
-      <property name="ajpPort">-1</property>
     </configuration>
   </container>
 </arquillian>

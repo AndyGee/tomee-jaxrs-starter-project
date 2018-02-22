@@ -3,31 +3,35 @@
                                http://www.hazelcast.com/schema/config/hazelcast-config-3.9.xsd"
            xmlns="http://www.hazelcast.com/schema/config">
 
-  <network>
-    <join>
-      <multicast enabled="false">
-        <trusted-interfaces>
-          <interface>10.42.0.*</interface>
-        </trusted-interfaces>
-      </multicast>
-      <tcp-ip enabled="true" connection-timeout-seconds="60">
-        <members>10.42.0.1,10.42.0.47</members>
-      </tcp-ip>
-      <aws enabled="false">
-      </aws>
-    </join>
-  </network>
+    <network>
+        <join>
+            <multicast enabled="false">
+                <trusted-interfaces>
+                    <interface>10.42.0.*</interface>
+                </trusted-interfaces>
+            </multicast>
+            <aws enabled="false">
+            </aws>
+            <tcp-ip enabled="true" connection-timeout-seconds="3">
+                <members>10.42.0.41,10.42.0.47</members>
+            </tcp-ip>
+        </join>
 
-  <ringbuffer name="tomee">
-    <capacity>1000</capacity>
-    <time-to-live-seconds>60</time-to-live-seconds>
-  </ringbuffer>
+        <interfaces enabled="true">
+            <interface>10.42.0.*</interface>
+        </interfaces>
+    </network>
 
-  <reliable-topic name="tomee">
-    <topic-overload-policy>DISCARD_OLDEST</topic-overload-policy>
-  </reliable-topic>
+    <ringbuffer name="tomee">
+        <capacity>1000</capacity>
+        <time-to-live-seconds>60</time-to-live-seconds>
+    </ringbuffer>
 
-  <properties>
-    <property name="hazelcast.socket.bind.any">false</property>
-  </properties>
+    <reliable-topic name="tomee">
+        <topic-overload-policy>DISCARD_OLDEST</topic-overload-policy>
+    </reliable-topic>
+
+    <properties>
+        <property name="hazelcast.socket.bind.any">false</property>
+    </properties>
 </hazelcast>
